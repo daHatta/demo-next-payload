@@ -24,14 +24,13 @@ export const ProductHero: React.FC<{
 
   return (
     <Gutter className={classes.productHero}>
-      
       <div className={classes.mediaWrapper}>
         {!metaImage && <div className={classes.placeholder}>No image</div>}
         {metaImage && typeof metaImage !== 'string' && (
           <Media imgClassName={classes.image} resource={metaImage} fill />
         )}
       </div>
-      
+
       <div className={classes.details}>
         <h3 className={classes.title}>{title}</h3>
 
@@ -59,9 +58,9 @@ export const ProductHero: React.FC<{
           </div>
           <p className={classes.stock}>In Stock</p>
         </div>
-      
+
         <Price product={product} button={false} />
-        
+
         <div className={classes.description}>
           <h6>Description</h6>
           <p>{description}</p>

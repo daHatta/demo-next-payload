@@ -121,7 +121,6 @@ export const CartPage: React.FC<{
                   appearance="primary"
                 />
               </div>
-
             </div>
           )}
         </Fragment>
